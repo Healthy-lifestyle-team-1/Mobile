@@ -155,4 +155,8 @@
         <item name="android:src">@drawable/the_curve_dark</item>
     </style>
 
+    <style name="btn_quantity">
+        <item name="android:src">@drawable/btn_quantity_dark</item>
+    </style>
+
 </resources>

@@ -1027,7 +1027,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginVertical="20dp"
                 android:contentDescription="@string/image"
-                android:src="@drawable/designer" />
+                style="@style/designer"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonBuy"

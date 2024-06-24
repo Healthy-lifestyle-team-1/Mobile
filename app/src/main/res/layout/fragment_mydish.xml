@@ -3,12 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:paddingHorizontal="16dp"
     android:layout_height="match_parent"
     tools:context=".view.mydish.MyDishFragment">
 
     <ImageView
+        android:layout_marginTop="20dp"
         android:id="@+id/back_button"
-        style="@style/HealthyLifeBackButton"
+        style="@style/icon_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -19,6 +23,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:maxLines="1"
+        android:gravity="center"
         android:fontFamily="@font/rubik"
         android:text="Идеальная тарелка"
         app:layout_constraintBottom_toBottomOf="@+id/back_button"
@@ -180,7 +185,6 @@
         android:layout_marginBottom="12dp"
         android:fontFamily="@font/rubik"
         android:text="____ ₽"
-        android:textColor="@color/text_main"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@id/btn_basket"
         app:layout_constraintEnd_toEndOf="parent"
