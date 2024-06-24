@@ -168,5 +168,9 @@
         <item name="android:background">@drawable/shadow_day</item>
     </style>
 
+    <style name="btn_quantity">
+        <item name="android:src">@drawable/btn_quantity</item>
+    </style>
+
 
 </resources>

@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -77,7 +78,10 @@ class MyDishFragment : Fragment() {
             }
         }
 
+        val textToastMyDish = "Ваш заказ в корзине!"
+
         binding.btnBasket.setOnClickListener {
+            Toast.makeText(activity, textToastMyDish, Toast.LENGTH_SHORT).show()
             myDishViewModel.addDishToBasket(
                 Pair(
                     leftHalfAdapter.getItem(leftCurPos),
